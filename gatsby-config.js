@@ -31,7 +31,7 @@ module.exports = {
       resolve: "gatsby-source-wordpress",
       options: {
         minimizeDeprecationNotice: true,
-        baseUrl: "gatsby-wordpress-course.local",
+        baseUrl: "localhost:10000/",
         protocol: "http",
         hostingWPCOM: false,
         useACF: false,
@@ -46,8 +46,13 @@ module.exports = {
           "**/tags",
           "**/taxonomies",
           "**/users",
+          "**/menus",
+          "**/portfolio",
+          "**/logo",
+          "**/favicon"
         ],
       },
     },
+    `gatsby-plugin-styled-components`,
   ],
 }
